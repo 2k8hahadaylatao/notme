@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="picstop">
+		<img src="test.png" id="pictop"> 
+</div>
+<div class="mmenu">
+<div class="menu-wrapper menu-gold">
+	<ul class="menu">
+	  <li><a href="http://127.0.0.1:5500/hello.html"> Trang chủ </a></li>
+	  <li>
+		<a href=""> Giới thiệu</a>
+		<ul>
+		  <li><a href="http://127.0.0.1:5500/up.html"> Về trường học</a></li>
+		  <li><a href="http://127.0.0.1:5500/up.html"> Về câu lạc bộ</a></li>
+		  <li><a href="http://127.0.0.1:5500/up.html"> Về cán bộ giáo viên </a></li>
+		</ul>
+	  </li>
+	  <li><a href="http://127.0.0.1:5500/up.html"> Hướng dẫn </a></li>
+	  <li>
+		<a href=""> Tin tức-Sự kiện</a>
+		<ul>
+		  <li><a href="http://127.0.0.1:5500/up.html"> Tin tức-Sự kiện trong trường </a></li>
+		  <li><a href="http://127.0.0.1:5500/up.html"> Tin tức-Sự kiện ngoài trường </a></li>
+			</ul>
+	  <li><a href="tkb.html"> Thời khoá biểu</a></li>
+	  <li><a href="http://127.0.0.1:5500/up.html"> Lịch công tác</a></li>
+	  <li><a href="http://127.0.0.1:5500/up.html">Liên hệ</a></li>
+	  <li><a href="http://127.0.0.1:5500/inlog.html">Các phòng chat</a>
+	</ul>
+	</div>
+  </div>
+  <div class="log">
+		<form>
+			<button type="button" class="logg" onclick="go()">Lên đầu trang </button>
+		<button type="button" class="loggg" onclick="go2()">Đăng nhập </button>
+		</form>
+  </div>
+  <div class="hinhnen">
+<div class="date" >
+	<i class="sdate"   aria-hidden="true" style="float: left; margin-right: 3px; margin-top: 3px;"></i><span style="font-size: 9pt; color:#0d73c9; font-family: 'Roboto',sans-serif; color: #0d73c9; font-weight: 700; line-height: 22px;"> Thứ 6,&nbsp;ngày buồn tháng nhớ năm
+thương</span></div>
+<div class="tutorial"> <marquee width="100%" scrollamount="4" behavior="scroll">CHÀO MỪNG BẠN ĐẾN VỚI TRANG THÔNG TIN ĐIỆN TỬ TRƯỜNG JSB30 kì lạ</marquee> </div>
+<div class="tim">
+	<div class="search">
+		<button type="submit" onclick="TimKiem()">
+			<span class="chatlieu" style="padding: 0px; font-size: 12px; margin: 0px;">🔎
+			</span>
+		</button>
+		<input type="text" placeholder="Nhập từ tìm kiếm" name="search" id="txtTimKiem">
+	</div>
+</div>
+</div>
+</div>
+
+    <div id="gg">
+        <img src="data:image/jpeg;base64,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" id="gg">
+    </div>
+    <div id="cc">
+        <img src="https://st.quantrimang.com/photos/image/2021/01/18/anh-hoan-hao-1.jpg" id="cc">
+    </div>
+    <div class="adc" id="ffa">
+        <div class="abc" id="fff">
+            <h1>Bảng Thông Báo</h1>
+        </div>
+        <p id="info1">Học sinh, giáo viên thích ứng với học trực tuyến
+
+					Từ đầu năm 2021 tới nay, ngành giáo dục, như đánh giá của Bộ trưởng Nguyễn Kim Sơn, trải qua một năm bị Covid-19 "đảo lộn và tàn phá".
+					
+					Phần lớn trong số 22 triệu học sinh - sinh viên chỉ đến trường khoảng 2-3 tháng. Thời gian còn lại là nghỉ hè và học online.
+					
+					Đầu tháng 10, khi mới chính thức vào năm học mới được hơn một tháng, không ít phụ huynh đã bùng nổ bởi những bức xúc với tình trạng con em mình học trực tuyến như thời gian sử dụng máy tính quá nhiều, ngoài học bài, làm bài tập còn xem phim, chơi game... Học sinh căng thẳng, mệt mỏi, thầy cô cực nhọc và áp lực, phụ huynh bức xúc, xã hội lo lắng.
+					
+					Thế nhưng khi dịch bệnh kéo dài, những nỗ lực của cả thầy và trò đã đặt học trực tuyến ở vị thế mới.
+					
+					Thầy và trò cả nước vẫn nỗ lực để thích ứng một cách nhanh chóng. Các thầy cô giáo giờ đây cũng “không thể ngồi yên được nữa” mà bắt đầu làm mới mình bằng những cuộc “thay đổi ngoạn mục”.
+					
+					Cơ quan quản lý nhà nước, cán bộ quản lý trực tiếp ở cơ sở và các giáo viên trực tiếp đứng lớp đều nhìn ra một tương lai dài cho việc học trực tuyến và khẳng định, phương thức học này sẽ không hoàn toàn dừng lại mà sẽ tiếp tục được duy trì một cách linh hoạt hơn.
+					
+					Chương trình "Sóng và máy tính" cho em
+					
+					Để hỗ trợ học sinh học trực tuyến và học qua truyền hình, Thủ tướng đã phát động chương trình “Sóng và máy tính cho em” nhằm vận động các doanh nghiệp tài trợ, quyên góp phương tiện học tập trực tuyến cho học sinh có hoàn cảnh khó khăn. Bộ Thông tin và Truyền thông là đầu mối phối hợp với Bộ GD-ĐT triển khai.
+					
+					Tính đến ngày 30/10, các tập đoàn viễn thông đã xây dựng thêm 283 điểm phát sóng tại các địa phương bị ảnh hưởng của dịch Covid-19. Các tổ chức, đơn vị đã cam kết ủng hộ 1.000.840 máy tính.
+					
+					Đầu tháng 11, Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT) chính thức bàn giao 10.000 máy tính đầu tiên trong tổng số 37.000 máy VNPT cam kết tài trợ. 
+					
+					Ngoài ra, tính đến ngày 25/10, ngành Giáo dục đã huy động được 142,43 tỷ đồng, 28.477 máy tính bảng, 28.545 điện thoại thông minh và 79.425 thiết bị hỗ trợ học trực tuyến khác. </p>
+    </div>
+    <div class="mop">
+        <div class="map">
+            <h1>Thông tin nhà trường</h1>
+        
+        </div>
+        <p>Thông tin nhà trường học sinh nào chả bt còn những ai ko bt chỉ cần bt là trường 95% học sinh giỏi 5% là giáo viên</p>
+
+    </div>
+
+	<script src="app.js">
+	</script>
+
+	<div id="bot">
+		<h1 id="bottiltle">LUÔN THEO DÕI ĐỂ NHẬN THÔNG BÁO MỚI NHẤT CỦA NHÀ TRƯỜNG</h1>
+		<form>
+			<input type="text" placeholder="Nhập địa chỉ email để nhận sự giúp đỡ" id="mail"></input>
+			<img src="mail.png" id="iconmail">
+			<a href="https://www.facebook.com/" id="alo">
+			<img class="fa" src="facebook.png"></img><p id="fatxt">Facebook</p></a>
+			<a href="https://mail.google.com/" id="allgoo">
+				<img class="goo" src="google-plus.png"></img><p id="gootxt">Google+</p></a>
+			<a href="https://twitter.com/?lang=vi" id="alltwi">
+			 <img class="twi" src="twitter.png"></img><p id="twitxt">Twiter</p></a>
+		</form>
+	</div>
+</body>
+</html>
