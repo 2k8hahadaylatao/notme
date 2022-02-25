@@ -94,6 +94,6 @@ button
 {
     border-color: orange;
     background: rgba(0, 0, 0, 0.0);
-    color: orange;
+    color: hsl(39, 99%, 48%);
     font-size: 20px;
 }
