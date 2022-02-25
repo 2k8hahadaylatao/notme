@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'afta_sansitalic';
+    src: url('aftasansthin-italic.woff2') format('woff2'),
+         url('aftasansthin-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'afta_sansregular';
+    src: url('aftasansthin-regular.woff2') format('woff2'),
+         url('aftasansthin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header
+{
+    width: auto;
+    height: 1000px;
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#icon
+{
+ 
+    display:flex;
+    font-size:20px;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.a
+{
+    text-decoration: none;
+    color:white;
+}
+body{
+    margin:0px;
+}
+#iconic
+{
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 420px;
+}
+#canh
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-left: 50px;
+    
+}
+#canh>a
+{
+    margin-left: 80px;
+}
+#content
+{
+    
+    margin-left: 150px;
+    margin-top: 170px;
+}
+#text-content
+{
+    color:white;
+    font-size: 55px;
+    font-weight: 100;
+    font-family:'afta_sansregular','Roboto', sans-serif;
+}
+#wrap
+{
+    background: rgba(0, 0, 0, 0.7);
+    padding-bottom: 383px;
+}
+button
+{
+    border-radius: 100px;
+    width: 220px;
+    height: 60px;
+    margin:10px;
+}
+#blank-fun
+{
+    background-color: orange;
+    border-color: orange;
+    color: white;
+    font-size: 20px;
+}
+#ok-fun
+{
+    border-color: orange;
+    background: rgba(0, 0, 0, 0.0);
+    color: orange;
+    font-size: 20px;
+}
