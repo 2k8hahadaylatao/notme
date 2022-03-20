@@ -14,7 +14,7 @@ class Hall
             this.ctx.drawImage(image,0,0) 
         };
         image.src = "/assets/backfloor.png";
-                            
+
     }
 
 }
