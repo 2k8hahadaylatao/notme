@@ -1,0 +1,100 @@
+#form
+{
+    width:46%;
+    border: 3px solid;
+    position: absolute ;
+    left:26%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.form-log
+{
+    margin-left: 20px;
+}
+ul 
+{
+    display:flex;
+    flex-direction:row;
+}
+li
+{
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+    width: 500px;
+    height:40px;
+    margin-top:  10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+button 
+{
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    margin-top:  10px;
+    height:60px;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 500px;
+    color: white;
+    background-color: blueviolet;
+}/*
+#form  li ul,
+#form ul ul {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: -1;
+  visibility: hidden;
+}*/
+#form > li ul {
+    top: 130%;
+    left: 0;
+  }
+#form a {
+    display: block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+  }
+#form li {
+    position: relative;
+  }
+ #form > li {
+    float: left;
+  }
+  #form,
+  #form ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: rgb(199, 10, 92);
+  }
+  
+#form ul ul {
+    left: 130%;
+    top: 0;
+  }
+#form ul a {
+    width: 250px;
+  }
+#form>ul>li:hover >ul>li{
+    top: 100%;
+    z-index:1;
+    visibility: visible;
+  }
+  a
+  {
+      color:white;
+  }
+  a:hover
+  {
+      background-color: rgba(255, 196, 0, 0.836);
+      
+  }

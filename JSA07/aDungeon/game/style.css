@@ -1,0 +1,22 @@
+body 
+{
+    background-color: rgba(20, 18, 18, 0.753);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color:purple;
+}
+*{
+    box-sizing: border-box;
+}
+.game-container
+{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    outline: 1px solid #ffff;
+    margin: 0 auto;
+    margin-top:20px;
+    overflow: hidden;
+    transform: scale(1.2) translateY(10%);
+}
