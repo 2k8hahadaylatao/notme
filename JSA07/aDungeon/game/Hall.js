@@ -8,12 +8,12 @@ class Hall
     }
 
     init()  {
-        const image = new Image();
+        const image= new Image();
 
         image.onload =() =>  {
             this.ctx.drawImage(image,0,0) 
         };
-        image.src = "/assets/backfloor.png";
+        image.src = "assets/backfloor.png";
 
     }
 
