@@ -5,8 +5,9 @@ h1
 }
 #show
 {
-    width: 1400px;
-    
+    margin: auto 0;
+
+    width: 340px;
     display: flex;
     flex-direction:row;
     transition-duration: 1.5s;  
@@ -30,10 +31,14 @@ h3
 }
 .class
 {
-    
     display: flex;
-    flex-direction:column-reverse;
-    width:400px;
+    flex-direction: column-reverse;
+}
+.class
+{
+    
+    width:340px;
+
     justify-content:space-between;
     background-color:rgba(0, 0, 0, 0.7);
     margin-left: 20px;
@@ -41,5 +46,4 @@ h3
 }
 body{
     overflow: scroll;
-   
 }

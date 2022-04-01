@@ -2141,3 +2141,4 @@ for(var i=1;i<=film.length;i++)
      <h1>${film[i].title}</h1></div>`);
 
 }
+run();
