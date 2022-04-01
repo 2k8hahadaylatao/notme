@@ -1,0 +1,133 @@
+    const image = new Image();
+    image.onload = () => {
+      this.ctx.drawImage(image,0,0)
+    };
+    image.src = "/images/maps/backfloor.png";
+    const light = new Image({}
+      );
+      light.onload = () => { 
+        this.ctx.drawImage(
+          light,
+          18, //left cut 
+          0, //top cut
+          61,//width of cut
+          61,//height of cutcutcutt
+          6 * 60 - 366,
+          5* 53-230,
+        390,
+        390
+        )
+      }
+      light.src="/images/clight.png";
+      
+      const torch1r_b = new Image();
+      torch1r_b.onload = () => { 
+    this.ctx.drawImage(
+      torch1r_b,
+      10, //left cut 
+      10, //top cut
+      250,//width of cut
+      250,//height of cutcutcutt
+      6 * 60 - 40,
+      5* 60+80,
+    190,
+    190
+
+    )
+  }
+  torch1r_b.src="/images/torch1.png";
+
+  const torch1l_b = new Image();
+  torch1l_b .onload = () => { 
+    this.ctx.drawImage(
+      torch1l_b ,
+      10, //left cut 
+      10, //top cut
+      250,//width of cut
+      250,//height of cutcutcutt
+      6 * 60 - 378,
+      5* 60+80,
+    190,
+    190
+
+    )
+  }
+  torch1l_b .src="/images/torch1.png";
+
+  const torch1l_t = new Image();
+  torch1l_t .onload = () => { 
+    this.ctx.drawImage(
+      torch1l_t,
+      10, //left cut 
+      10, //top cut
+      250,//width of cut
+      250,//height of cutcutcutt
+      6 * 60 - 378,
+      5* 60-310,
+    190,
+    190
+    )
+  }
+  torch1l_t .src="/images/torch1.png";
+
+  const torch1r_t = new Image();
+  torch1r_t .onload = () => { 
+    this.ctx.drawImage(
+      torch1r_t,
+      10, //left cut 
+      10, //top cut
+      250,//width of cut
+      250,//height of cutcutcutt
+      6 * 60 - 40,
+      5* 60-310,
+    190,
+    190
+    )
+  }
+  torch1r_t .src="/images/torch1.png";
+
+  //Place some game Object
+  const fireplace = new Firepl(
+    {
+        x:0.3,
+        y:4,
+        src: "/images/characters/bonefire.gif"
+  })
+  const player = new GameObject(
+    {
+      x:6.02,
+      y:5,
+      src: "/images/characters/rouge.png"
+    }
+  )
+ 
+  const shaman = new GameObject(
+    {
+      x:10.34,
+      y:5,
+      src: "/images/characters/druid.png"
+    }
+  )
+
+  
+  const botanist = new GameObject(
+    {
+      x:3,
+      y:5,
+      src:"/images/characters/botanist.png"
+    }
+  )
+  const teller = new GameObject(
+    {
+      x:1.5,
+      y:8.5,
+      src:"/images/characters/teller1.png"
+    })
+      setTimeout(()=>{
+      fireplace.sprite.draw(this.ctx);
+    player.sprite.draw(this.ctx);
+    botanist.sprite.draw(this.ctx);
+    shaman.sprite.draw(this.ctx);
+    teller.sprite.draw(this.ctx);
+    console.log( typeof  player.sprite.draw(this.ctx), botanist.sprite.draw(this.ctx),shaman.sprite.draw(this.ctx), teller.sprite.draw(this.ctx));
+}, 200);
