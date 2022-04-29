@@ -1,0 +1,46 @@
+* Bão "nhiễu ma tố" *
++Ma tố cũng khá giống mana nhưng nó là nguồn năng lượng của quái, và cực kì độc với con người nếu nồng độ quá đặc, vì ma tố ở mọi nơi
+nhất là ở khu nhiều quái và một khi nó nhiễu thì sẽ lan ra mọi nơi và gây bệnh với con người và ảnh hưởng cả mana lẫn sinh lực con người.
++Kiểu khí hậu xảy ra khá thường xuyên ở game, cứ mỗi 13 tiếng nó sẽ xuất hiện một lần và kéo dài 30 phút. Nếu đi phơi nhiễm loại khí hậu này 
+trong khoảng thời gian nhất định(1 phút) thì sẽ bị dính bệnh(bám mãi giống lời nguyền hơn) tối đa một người bị nhiễm 15 bệnh(có những bệnh
+tính bằng stack thì mỗi stack cũng là 1 bệnh). Có cách để phòng tránh nó là trốn trong thành hoặc dungeon hoặc các hầm trú ẩn(nếu ad làm)
++Bệnh này có thể chữa nhưng thuốc rất đắt và thường chỉ bán ở một nơi cố định trong thành. Thuốc chia ra 3 loại: thường( chỉ chữa được một bệnh
+ngẫu nhiên, giá:10.000),  xịn(chữa được 2 bệnh ngẫu nhiên, giá:19.000), đặc biệt(chữa một bệnh tự chọn, giá:650.000), bệnh thì có 2 loại là bệnh xấu và
+trung lập tuy nhiên một số cái trung lập khá ngon và đáng được đầu tư với giá ngất ngưởng kia.
++Nếu đã bị dính chỉ một bệnh(hoặc nhiều hơn) thì mỗi 15 phút thì bạn dính thêm một bệnh nữa đến khi đủ 15 thì thôi.
+/ |\| \  Các loại bệnh xấu(100% ảnh hưởng tiêu cực):
+- Bạn có lực hút riêng của bản thân( stack 3, độ hiếm:1): Mỗi stack thì tốc độ người chơi( tốc độ gốc player minecraft) giảm đi 0,2.
+- Tên háu ăn(ko stack,độ hiếm:2 ): Bị hiệu ứng đói I.
+- Không gian quanh bạn bị nhiễu(ko stack,độ hiếm:1): Bị dịch chuyển xung quanh mỗi 50 bước chân.
+- Mana thất thoát(ko stack,độ hiếm:1): mana giảm 35%.
+- Bạn bị suy nhược(ko stack,độ hiếm:2): hp giảm 20%.
+- Bàn tay tiết ra độc( ko stack, độ hiếm: 3): Tấn công địch gây hiệu ứng độc I trong 10 giây, nhưng khi bạn ăn hoặc uống thì cũng bị độc I.
+-Mây mưa quanh bạn(ko stack, độ hiếm: 1): Bạn kháng lửa nhưng sát thương nhận vào tăng 1.
+-Nắng mãi ở bên(ko stack, độ hiếm: 1): Sát thương bạn nhận vào nếu dính lửa tăng 4, nhưng sát thương nhận vào giảm 1.
+- Cái bình rò rỉ(ko stack, độ hiếm: 3): Nếu mana quá 50% thì giảm 2 mana / s.
+- Ma tố vây lấy mắt bạn(ko stack, độ hiếm: 2): Dính hiệu ứng mù loà.
+- Vòng cổ ma tố(ko stack, độ hiếm: 4): Không thể đeo vòng cổ và mũ nhưng giảm sát thương nhận vào 10.
+/ |\| \ Các loại bệnh trung lập( có cái khá ngon đó):
+-Ma tố xuất hiện từ lưng bạn ( ko stack, độ hiếm:5 ): Bạn mọc cánh nhưng nó rất yếu đủ để nhấc bạn lên một ít khi muốn nhảy chứ ko giúp bạn 
+bay được. Tốc độ người chơi( tốc độ minecraft palyer) tăng 0,63, nhận hiệu ứng nhảy cao 1, tuy nhiên hp giảm 10%.
+- Một đôi giày mới !??! ( ko stack, độ hiếm:7 ): Ko thể mang giày nhưng bù lại được một đôi giày do ma tố bao bọc và nó có hình móng guốc. tốc
+độ người chơi( tốc độ minecraft player) tăng 1,5.
+- Hai nhãn cầu bay quanh bạn( ko stack, độ hiếm: 5): Có thêm 2 con mắt bay quanh bạn cho bạn hiệu ứng night visson và tăng khả năng né +4,5 khả năng 
+né, tuy nhiên nếu mana quá 97% thì giảm 5 mana/ s.
+- Cơn khát máu( stack 3, độ hiếm: 8): Stack 1: Sát thương tấn công tăng 3.5% ,sát thương nhận vào tăng 20; Stack 2:Sát thương tấn công tăng 6.75% ,
+sát thương nhận vào tăng 33; Stack 3:Sát thương tấn công tăng 10.55% ,sát thương nhận vào tăng 37.
+- Xúc tu Ma tố( stack 4, độ hiếm: 10, hiếm nhất , đáng đầu tư nhất): Có tỉ lệ khi tấn công( phép, vật lí, cung tên, tnt, thuốc, cái gì cx đc) tạo ra một xúc
+ tu màu xanh dương đậm(màu ma tố) tấn công địch 1 đòn với sát thương tương đương từng stack kèm hiệu ứng chậm rãi 4. Stack 1: Tạo ra 1 xúc tu gây ra 
+ 125% sát thương, Stack 2: Tạo ra 2 xúc tu mỗi xúc tui gây 72,5% sát thương vừa gây ra, stack 3: Tạo ra 3 xúc tu mỗi cái gây 65% sát thương vừa gây ra,
+ Stack 4: tạo ra 4 xúc tu mỗi cái gây 50,3% sát thương vừa gây ra.
+- Xương bạn nhô ra từ lưng và bị ma tố bọc lấy( 2 stack, độ hiếm: 9): Hp giảm 15%, mana giảm 22% nhưng có tỉ lệ 65%( 65% thật nha) khiến địch bị nhận 
+lượng sát thương bằng "sát thương phép của bản thân" * 'stack 1:12'/'stack 2: 14,25'.
+- Cơn khát mana và ma tố( ko stack, độ hiếm:5): Bất kể kẻ địch hay đồng minh trong bán kính 5 block thì với mỗi đối tượng tốc độ hồi mana bạn tăng lên 1, 
+tuy nhiên đồng minh quanh bạn giảm 12 mana/ 5s. 
+- Ma tố bọc lấy trán bạn( ko stack, độ hiếm:7): Mana giảm 5%, bù lại cho khả năng từ chối tử thần và  khi máu dưới 80 thì nhận hiệu ứng bảo vệ I, hồi phục: 3,
+chậm rãi I, sát thương I, mù(blind).
+-Bạn có bộ móng vuốt rồng( ko stack, độ hiếm: 8): Không thể cầm vũ khí, đeo găng tay nhưng nhận hiệu ứng tốc độ I, và sát thương "level hiện tại" * 3. 
+- Sự khinh thường( ko stack, độ hiếm 6): Sát thương lên quái giảm 25,75% còn với boss tăng 30%.
+- Máu bạn bốc hơi và xanh đi( ko stack, độ hiếm: 5): Máu giảm 10%, tăng mana= "số hp bị giảm"*1,5-100.
+- Mana bạn lắng xuống và đỏ lên( ko stack, độ hiếm: 6): Mana giảm 25%, tăng hp="số mana bị giảm"*2.3.
+- Máu và mana bạn thất thoát( ko stack, độ hiếm : 7) : mana giảm 7%, máu giảm 9%, sát thương tăng= ("số máu giảm" +" số mana giảm"-30)/"cấp độ hiện tại".
