@@ -9,6 +9,7 @@ class OverworldEvent {
     damaged(resolve)
     {
         let health= document.querySelector("#hp");
+        console.log(this.event.damage);
         let damage=Number(this.event.damage);
         health.value-=damage;
         resolve();
