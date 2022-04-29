@@ -28,7 +28,8 @@ class Person extends GameObject{
             if (!state.map.isCutscenePlaying && this.isPlayerControlled && state.arrow) {
               this.startBehavior(state, {
                 type: "walk",
-                direction: state.arrow
+                direction: state.arrow,
+                
               })
             }
             this.updateSprite(state);
@@ -50,7 +51,8 @@ class Person extends GameObject{
           }
         //Ready walk 
         state.map.moveWall(this.x, this.y, this.direction);
-         this.movingProgressRemaining = 32;
+        if(localStorage.getItem("done")=="true"){
+         this.movingProgressRemaining=32;}
          this.updateSprite(state);
         }
         if(behavior.type === "stand"){

@@ -86,9 +86,9 @@ class OverworldMap {
     delete this.walls[`${x},${y}`]
   }
   moveWall(wasX, wasY, direction) {
-    // this.removeWall(wasX, wasY);
-    // const {x,y} = utils.nextPosition(wasX, wasY, direction);
-    // this.addWall(x,y);
+    this.removeWall(wasX, wasY);
+    const {x,y} = utils.nextPosition(wasX, wasY, direction);
+    this.addWall(x,y);
   }
 }
 
@@ -97,6 +97,7 @@ class OverworldMap {
 window.OverworldMaps = {
   
   Cave: {
+    
     lowerSrc: "/images/maps/cave.png",
     upperSrc: "",
     gameObjects: {
@@ -299,7 +300,15 @@ window.OverworldMaps = {
         x:   utils.withGrid(2),
         y:   utils.withGrid(4),
         src:"/images/maps/rock3.png",
+        behaviorLoop:[
+          {type:"stand",direction:"down",time:100000000}
+        ],
       }),
+      // rock2: new Person({
+      //   x:   utils.withGrid(12),
+      //   y:   utils.withGrid(5),
+      //   src:"/images/maps/rock3.png",
+      // }),
     player: new Person({
       
       isPlayerControlled: true,
@@ -310,6 +319,7 @@ window.OverworldMaps = {
     }),
   },
       walls:{
+        [utils.asGridCoord(13,4)] : true,
     [utils.asGridCoord(4,6)] : true,
     [utils.asGridCoord(10,11)] : true,
     [utils.asGridCoord(9,6)] : true,
@@ -320,13 +330,19 @@ window.OverworldMaps = {
     [utils.asGridCoord(5,3)] : true,
     [utils.asGridCoord(8,11)] : true,
     [utils.asGridCoord(11,4)] : true,
-    [utils.asGridCoord(2,3)] : false,
+
     
 
   },
   cutsceneSpaces: {
+    [utils.asGridCoord(4,3)] :[ {
+      events:[
+        {type:"canWalk"}
+      ]
+    }],
     [utils.asGridCoord(3,3)] :[ {
       events:[
+        {type:"changeGame", url:"http://127.0.0.1:5500/cube.html"},
         {who:"level",type: "stand",  direction:"left",time:1},
         {who:"player",type:"walk",direction:"down"},
         {who:"player",type:"walk",direction:"down"},
@@ -344,12 +360,13 @@ window.OverworldMaps = {
     }],
     [utils.asGridCoord(11,4)] :[ {
       events:[
-        {type:"changeGame", url:"http://127.0.0.1:5500/cube.html"}
+        {who:"player", type:"walk",direction:"right"}
       ]
     }],
+    
     [utils.asGridCoord(11,5)] :[ {
       events:[
-        {type:"damaged",damge:"1"},
+        {type:"damaged",damage:"1"},
         {who:"player", type:"walk",direction:"down"}
       ]
     }],

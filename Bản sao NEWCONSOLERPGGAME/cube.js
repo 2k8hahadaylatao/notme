@@ -1,4 +1,4 @@
-// globalConfig.js
+
 // ============================================================================
 // ============================================================================
 //renderScoreHud
@@ -1424,7 +1424,7 @@ function setScore(score) {
 	state.game.score = score;
 	renderScoreHud();
 	if(state.game.score==200 || state.game.score=="200"){
-		history.back()
+		window.open("http://127.0.0.1:5500/index.html");
 	}
 }
 
@@ -1435,7 +1435,8 @@ function incrementScore(inc) {
 			state.game.score = 0;
 		}
 		if(state.game.score==200 || state.game.score =="200"){
-			history.back()}
+			localStorage.setItem("done","true");
+			window.open("http://127.0.0.1:5500/index.html", '_blank').focus();;}
 		renderScoreHud();
 	}
 

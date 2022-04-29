@@ -9,9 +9,12 @@ class OverworldEvent {
     damaged(resolve)
     {
         let health= document.querySelector("#hp");
-        console.log(this.event.damage);
         let damage=Number(this.event.damage);
+        console.log(damage);
         health.value-=damage;
+        if(health.value <=0 ){
+            window.location="http://127.0.0.1:5500/index.html";
+        }
         resolve();
     }
     stand(resolve){
@@ -78,10 +81,16 @@ class OverworldEvent {
     
         })
       }
+      canWalk(resolve){
+        localStorage.setItem("done","false");
+        resolve();
+      }
       changeGame(resolve)
       {
+          localStorage.setItem("done","false");
           const diachi = this.event.url;
-            window.location=diachi;
+          window.open(diachi,'_blank');
+          
           resolve();
       }
     init()
