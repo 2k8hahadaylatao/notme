@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>COLORON GAME</title>
+<link rel="dns-prefetch" href="https://fast.appcues.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="COLORON GAME">
+<meta name="twitter:description" content="A game made to inspire developers to use GSAP, ES6 and Flexbox...">
+<meta name="twitter:image" content="https://shots.codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY-800.jpg?version=1652532633">
+<meta property="og:image" content="https://shots.codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY-800.jpg?version=1652532633" itemprop="thumbnailUrl">
+<meta property="og:title" content="COLORON GAME">
+<meta property="og:url" content="https://codepen.io/ThanhNguyen2k8hcm/details/poaNaNY">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="A game made to inspire developers to use GSAP, ES6 and Flexbox...">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2FThanhNguyen2k8hcm%2Fpen%2FpoaNaNY&amp;format=json" title="COLORON GAME">
+<link rel="stylesheet" media="all" href="./COLORON GAME_files/global-b9b1d5e5124eb38e36b0ff310bd20d9c585366e15aeac445af6d716d22b0e9a5.css">
+<link rel="stylesheet" media="screen" href="./COLORON GAME_files/everypage-ab54e1bc.css">
+<link rel="stylesheet" media="all" href="./COLORON GAME_files/editor-76c94becd624b7756023084930a434dfe6d2d8f8886e453f5273677b4fea3dd1.css">
+<meta name="description" content="A game made to inspire developers to use GSAP, ES6 and Flexbox...">
+<link rel="stylesheet" media="screen" href="./COLORON GAME_files/twilight-976bb0f608bdbaa6f2d5bccaebc1f7e918c76f47da83f19f764b42c83ea53fe5.css" id="cm-theme">
+<style id="cm-font-family" class="cm-font-family" nonce="">
+  
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo,
+  monospace;
+  }
+</style>
+<style id="cm-font-size" nonce="">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 15px;
+  }
+</style>
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="oMC3106GZ0uIVBEe7IgbGesPf1Xymve9FU2s/LyoaRFzKuRE/UfQzT9HyI/V9Jya9F3QHm4LOmb6ngMNF3aGyA==">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+<script nonce="">
+  /* Firefox needs this to prevent FOUT */
+</script>
+</head>
+<body class="room-editor editor state-htmlOn-cssOn-jsOn twilight sidebar-false preload prelayout
+  layout-top
+ logged-in
+">
+<header class="main-header" id="main-header">
+</header>
+<div class="item-settings-modal tab-layout tab-layout-modal pen " id="item-settings-modal">
+<header class="item-settings-modal-header tab-layout-header">
+<h2 class="item-settings-modal-header-title tab-layout-header-title">Pen Settings</h2>
+<div class="save-and-close-wrap">
+<button type="button" class="button mini-button button-no-right-margin close" id="top-close-settings">
+<svg class="icon-x" viewBox="0 0 100 100">
+<path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"></path>
+</svg>
+</button>
+</div>
+</header>
+<div class="tabs tab-layout-wrapper settings-tabs-wrapper">
+<nav id="settings-tabs" class="no-mobile-nav tab-layout-tabs item-settings-tabs  notranslate" translate="no">
+<div class="tab-layout-tab-group">
+<a id="settings-html-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-html" class="settings-tab-html" data-type="html">
+HTML
+</a>
+<a id="settings-css-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-css" class="settings-tab-css" data-type="css">
+CSS
+</a>
+<a id="settings-js-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-js" class="settings-tab-js" data-type="js">
+JS
+</a>
+</div>
+<div class="tab-layout-tab-group">
+<a id="settings-details-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-details" class="settings-tab-details" data-type="details">
+Pen Details
+</a>
+<a id="settings-privacy-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-privacy" class="settings-tab-privacy" data-type="privacy">
+Privacy
+<span style="border-radius: 2px; padding: 1px 6px 2px 5px; color: black !important; background: var(--cp-color-yellow); white-space: nowrap; text-shadow: none; letter-spacing: 0; font-size: 71%; position: relative; top: -1px;">PRO</span>
+</a>
+<a id="settings-behavior-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-behavior" class="settings-tab-behavior" data-type="behavior">
+Behavior
+</a>
+<a id="settings-editor-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-editor" class="settings-tab-editor" data-type="editor">
+Editor
+</a>
+<a id="settings-template-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-template" class="settings-tab-template" data-type="template">
+Template
+</a>
+<a id="settings-screenshot-tab" href="https://codepen.io/ThanhNguyen2k8hcm/pen/poaNaNY#settings-screenshot" class="settings-tab-screenshot" data-type="screenshot">
+Screenshot
+<span style="border-radius: 2px; padding: 1px 6px 2px 5px; color: black !important; background: var(--cp-color-yellow); white-space: nowrap; text-shadow: none; letter-spacing: 0; font-size: 71%; position: relative; top: -1px;">PRO</span>
+</a>
+</div>
+</nav>
+<div class="settings tab-page" id="settings-html">
+<h3 aria-label="HTML">HTML</h3>
+<div class="settings-row top-label-form normal-labels">
+<h4>
+<label for="html-preprocessor">
+HTML Preprocessor
+</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" viewBox="0 0 100 100">
+<path d="M75,0H25C11.19,0,0,11.193,0,25v50c0,13.802,11.19,25,25,25h50c13.811,0,25-11.198,25-25V25C100,11.193,88.811,0,75,0z
+   M57.203,85.067H41.504V72.542h15.699V85.067L57.203,85.067z M73.357,42.041c-0.84,2.066-1.873,3.834-3.102,5.298
+  c-1.235,1.474-2.604,2.718-4.101,3.751c-1.498,1.035-2.922,2.066-4.249,3.101c-1.333,1.034-1.553,2.214-2.596,3.547
+  c-1.025,1.335-0.977,3.004-0.977,5.006v3.924H41.668v-4.623c0-2.864,1.366-5.265,2.27-7.202c0.896-1.935,2.255-3.581,3.459-4.947
+  c1.196-1.367,2.62-2.556,3.955-3.557c1.327-0.993,2.637-1.993,3.776-2.995c1.123-1.001,2.083-2.1,2.783-3.304
+  c0.7-1.197,1.043-2.694,0.977-4.5c0-3.06-0.74-5.33-2.245-6.795c-1.498-1.465-3.582-2.206-6.25-2.206c-1.8,0-3.337,0.351-4.639,1.05
+  c-1.303,0.7-2.369,1.635-3.199,2.808c-0.837,1.163-1.448,3.593-1.847,5.156c-0.407,1.57-0.602,6.115-0.602,6.115H25.399
+  c0.073-8.333,0.684-7.963,1.855-10.965c1.164-2.995,2.8-6.132,4.899-8.33c2.099-2.197,4.63-4.179,7.601-5.417
+  c2.962-1.228,6.283-1.977,9.945-1.977c4.736,0,8.683,0.581,11.856,1.876c3.167,1.302,5.713,2.889,7.65,4.817
+  c1.929,1.937,3.312,4.004,4.149,6.234c0.831,2.237,1.245,4.313,1.245,6.242C74.601,37.354,74.187,39.975,73.357,42.041z"></path>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About HTML Preprocessors</h5>
+<svg class="icon-x" viewBox="0 0 100 100">
+<path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"></path>
+</svg>
+<p>HTML preprocessors can make writing HTML more powerful or convenient. For instance, Markdown is designed to be easier to write and read for text documents and you could write a loop in Pug.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-html-preprocessors/" target="_blank" rel="noopener">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank" rel="noopener">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="html-preprocessor" id="html-preprocessor" class="fullwidth">
+<option value="none">None</option>
+<option value="haml">Haml</option>
+<option value="markdown">Markdown</option>
+<option value="slim">Slim</option>
+<option value="pug">Pug</option>
+</select>
+<div class="select-icon">
+<svg viewBox="-122.9 121.1 105.9 61.9" class="icon-arrow-down-mini">
+<path d="M-63.2,180.3l43.5-43.5c1.7-1.7,2.7-4,2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.7l-37.2,37.2l-37.2-37.2
+        c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.6c-1.9,1.8-2.8,4.2-2.8,6.6c0,2.3,0.9,4.6,2.6,6.5l0,0c11.4,11.5,41,41.2,43,43.3l0.2,0.2
+        C-73.5,183.9-66.8,183.9-63.2,180.3z"></path>
+</svg>
+<svg viewBox="-122.9 121.1 105.9 61.9" class="icon-arrow-down-mini">
+<path d="M-63.2,180.3l43.5-43.5c1.7-1.7,2.7-4,2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.7l-37.2,37.2l-37.2-37.2
+        c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.6c-1.9,1.8-2.8,4.2-2.8,6.6c0,2.3,0.9,4.6,2.6,6.5l0,0c11.4,11.5,41,41.2,43,43.3l0.2,0.2
+        C-73.5,183.9-66.8,183.9-63.2,180.3z"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="settings-row top-label-form normal-labels">
+<h4>
+<label for="html-classes">Add Class(es) to &lt;html&gt;</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" viewBox="0 0 100 100">
+<path d="M75,0H25C11.19,0,0,11.193,0,25v50c0,13.802,11.19,25,25,25h50c13.811,0,25-11.198,25-25V25C100,11.193,88.811,0,75,0z
+   M57.203,85.067H41.504V72.542h15.699V85.067L57.203,85.067z M73.357,42.041c-0.84,2.066-1.873,3.834-3.102,5.298
+  c-1.235,1.474-2.604,2.718-4.101,3.751c-1.498,1.035-2.922,2.066-4.249,3.101c-1.333,1.034-1.553,2.214-2.596,3.547
+  c-1.025,1.335-0.977,3.004-0.977,5.006v3.924H41.668v-4.623c0-2.864,1.366-5.265,2.27-7.202c0.896-1.935,2.255-3.581,3.459-4.947
+  c1.196-1.367,2.62-2.556,3.955-3.557c1.327-0.993,2.637-1.993,3.776-2.995c1.123-1.001,2.083-2.1,2.783-3.304
+  c0.7-1.197,1.043-2.694,0.977-4.5c0-3.06-0.74-5.33-2.245-6.795c-1.498-1.465-3.582-2.206-6.25-2.206c-1.8,0-3.337,0.351-4.639,1.05
+  c-1.303,0.7-2.369,1.635-3.199,2.808c-0.837,1.163-1.448,3.593-1.847,5.156c-0.407,1.57-0.602,6.115-0.602,6.115H25.399
+  c0.073-8.333,0.684-7.963,1.855-10.965c1.164-2.995,2.8-6.132,4.899-8.33c2.099-2.197,4.63-4.179,7.601-5.417
+  c2.962-1.228,6.283-1.977,9.945-1.977c4.736,0,8.683,0.581,11.856,1.876c3.167,1.302,5.713,2.889,7.65,4.817
+  c1.929,1.937,3.312,4.004,4.149,6.234c0.831,2.237,1.245,4.313,1.245,6.242C74.601,37.354,74.187,39.975,73.357,42.041z"></path>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>Adding Classes</h5>
+<svg class="icon-x" viewBox="0 0 100 100">
+<path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"></path>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body&gt;</code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. So you don't have access to higher-up elements like the <code>&lt;html&gt;</code> tag. If you want to add classes there that can affect the whole document, this is the place to do it.</p>
+</div>
+</div>
+<input type="text" id="html-classes" name="html-classes" class="fullwidth" placeholder="e.g. single post post-1234" maxlength="250">
+</div>
+<div class="settings-row top-label-form normal-labels">
+<h4>
+<label for="head-content">Stuff for &lt;head&gt;</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" viewBox="0 0 100 100">
+<path d="M75,0H25C11.19,0,0,11.193,0,25v50c0,13.802,11.19,25,25,25h50c13.811,0,25-11.198,25-25V25C100,11.193,88.811,0,75,0z
+   M57.203,85.067H41.504V72.542h15.699V85.067L57.203,85.067z M73.357,42.041c-0.84,2.066-1.873,3.834-3.102,5.298
+  c-1.235,1.474-2.604,2.718-4.101,3.751c-1.498,1.035-2.922,2.066-4.249,3.101c-1.333,1.034-1.553,2.214-2.596,3.547
+  c-1.025,1.335-0.977,3.004-0.977,5.006v3.924H41.668v-4.623c0-2.864,1.366-5.265,2.27-7.202c0.896-1.935,2.255-3.581,3.459-4.947
+  c1.196-1.367,2.62-2.556,3.955-3.557c1.327-0.993,2.637-1.993,3.776-2.995c1.123-1.001,2.083-2.1,2.783-3.304
+  c0.7-1.197,1.043-2.694,0.977-4.5c0-3.06-0.74-5.33-2.245-6.795c-1.498-1.465-3.582-2.206-6.25-2.206c-1.8,0-3.337,0.351-4.639,1.05
+  c-1.303,0.7-2.369,1.635-3.199,2.808c-0.837,1.163-1.448,3.593-1.847,5.156c-0.407,1.57-0.602,6.115-0.602,6.115H25.399
+  c0.073-8.333,0.684-7.963,1.855-10.965c1.164-2.995,2.8-6.132,4.899-8.33c2.099-2.197,4.63-4.179,7.601-5.417
+  c2.962-1.228,6.283-1.977,9.945-1.977c4.736,0,8.683,0.581,11.856,1.876c3.167,1.302,5.713,2.889,7.65,4.817
+  c1.929,1.937,3.312,4.004,4.149,6.234c0.831,2.237,1.245,4.313,1.245,6.242C74.601,37.354,74.187,39.975,73.357,42.041z"></path>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About the &lt;head&gt;</h5>
+<svg class="icon-x" viewBox="0 0 100 100">
+<path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"></path>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body&gt;</code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. If you need things in the <code>&lt;head&gt;</code> of the document, put that code here.</p>
+</div>
+</div>
+<div class="head-content-wrapper">
+<textarea id="head-content" name="head-content" class="fullwidth is-code head-content notranslate" translate="no" placeholder="e.g. &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;"></textarea>
+<span class="insecure-resource-tooltip">
+<div class="help-flyout-link">
+<span class="icon-help">!</span>
+<div class="help-flyout help-flyout-reverse">
+<svg class="icon-x" viewBox="0 0 100 100">
+<path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"></path>
+</svg>
+<h5>Insecure Resource</h5>
+<p>The resource you are linking to is using the 'http' protocol, which may not work when the browser is using https.</p>
+</div>
+</div>
+</span>
+</div>
+<button class="button mini-button button-medium" id="meta-tag-insert">↑ Insert the most common viewport meta tag</button>
+</div>
+</div>
+<div class="settings tab-page" id="settings-css">
+<h3 aria-label="CSS">CSS</h3>
+<div class="settings-row top-label-form normal-labels">
+<h4>
+<label for="css-preprocessor">
+CSS Preprocessor
+</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" viewBox="0 0 100 100">
+</svg></div></div></div></div></div></body></html>

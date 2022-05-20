@@ -1,0 +1,15 @@
+Lỗi hay mắc từ trước đến giờ:
++Tay, chân vẽ sai. [ X ]
++Thiếu hành động none cho item. [ X ]
++Utils sai. [ X ]
++Sắp xếp tệp tin và funcition sai. [ X ]
++Tên biến ko có nghĩa. [ X ]
++Ko chia thư mục. [ X ]
++Tên từng thư mục,  tệp tin vô cmn nghĩa. [ X ]
++Dùng VIM( do chưa thuần thục bằng react ). [ X ]
++Lối logic sai. [ X ]
++Ko chịu từ bỏ trong khi đó làm theo hướng khác được . [ X ]
++Ko chịu đọc cái này mỗi khi lên ý tưởng. [  ]
++Viết comand tiếng việt(nên đổi sang tiếng anh cả cách đặt tên lẫn comment). [  ]
++Để init ở cuối. [ X ]
++ Khởi tạo sever Python cho quen( python -m SimpleHTTPServer 7749);

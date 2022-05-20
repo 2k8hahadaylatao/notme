@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+    background-image: url("/images/menu/mainmenu0.png");
+    background-position-x: center;
+
+}
+#button{
+ width: 260px;
+
+ background-color: rgb(255, 183, 0);
+ border-top: 0px ;
+ border-left:0px;
+ margin-top: 450px;
+ transform: rotateY(10deg);
+ margin-left: 42%;
+ font-family:Lato, sans-serif;
+ font-size: 55px;
+ border-bottom: 0px;
+ border-right:0px;
+ height: 150px;
+ color: white;
+ transition-duration: 1.2s;
+}
+#button::before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 40px solid white;
+    border-left: 50px solid rgb(255, 183, 0);
+    width: 0;
+    border-bottom: 2px solid  rgb(18, 18, 18);
+    border-right: 3px solid rgb(18, 18, 18) ;
+
+}
+#button::after{
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    border-bottom: 40px solid white;
+    border-right: 50px solid rgb(255, 183, 0);
+    width: 0;
+    border-top: 2px solid  rgb(18, 18, 18);
+    border-left: 3px solid rgb(18, 18, 18) ;
+}
+#button:hover{
+    border: 2px solid black ;
+    margin-top: 447px;
+    transform: rotateY(0deg);
+    background-color: rgb(255, 183, 0);
+    height: 50px;
+    font-size: 30px;
+    transition-duration: 1.2s;
+    color: white;
+}
+button:focus >#button+#button::after+#button::before{
+    border: 2px solid black ;
+    margin-top: 447px;
+    transform: rotateY(0deg);
+    background-color: rgba(69, 69, 69, 0.64);
+    height: 50px;
+    color: white;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+}
+progress{
+    margin-left:40%;
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+}
+#slime {
+    position: absolute;
+    background-size: cover;
+    left:48%;
+    top:280px;
+    height: 170px;
+    width: 150px;
+    background-image:url("/images/menu/slimemenu1.png");
+}
