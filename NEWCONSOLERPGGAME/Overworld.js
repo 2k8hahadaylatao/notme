@@ -84,7 +84,7 @@ step();
   }
 
   init() {
-    this.startMap(window.OverworldMaps.Ready);
+    this.startMap(window.OverworldMaps.Cave);
 
     this.bindActionInput();
     this.bindHeroPositionCheck();

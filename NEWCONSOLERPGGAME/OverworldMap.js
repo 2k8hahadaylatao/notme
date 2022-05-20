@@ -260,11 +260,10 @@ class OverworldMap {
     const arrow3 = this.gameObjects["arrow3"];
     const monster = this.gameObjects["monster"];
     const monster1 = this.gameObjects["monster1"];
-    let health = document.querySelector("#hp");
-    let damage = 1;
     if(`${hero.x},${hero.y}`== `${trap.x},${trap.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -273,8 +272,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${arrow.x},${arrow.y}`)
     {
-
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -282,7 +281,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap1.x},${trap1.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -290,7 +290,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap2.x},${trap2.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -298,7 +299,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap3.x},${trap3.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -306,7 +308,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap4.x},${trap4.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -314,7 +317,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap5.x},${trap5.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -322,16 +326,17 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap6.x},${trap6.y}`)
     {
-      // let health= document.querySelector("#hp");
-      // let damage=1;
-      // health.value-=damage;
-      // if(health.value <=0 ){
-      //     window.location="http://127.0.0.1:5500/index.html";
-      // }
+      let health= document.querySelector("#hp");
+      let damage=1;
+      health.value-=damage;
+      if(health.value <=0 ){
+          window.location="http://127.0.0.1:5500/index.html";
+      }
     }
     if(`${hero.x},${hero.y}`== `${trap7.x},${trap7.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -339,7 +344,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap8.x},${trap8.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -347,7 +353,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap9.x},${trap9.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -355,7 +362,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${trap10.x},${trap10.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -365,7 +373,8 @@ class OverworldMap {
    
     if(`${hero.x},${hero.y}`== `${arrow1.x},${arrow1.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -373,7 +382,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${arrow2.x},${arrow2.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -381,7 +391,8 @@ class OverworldMap {
     }
     if(`${hero.x},${hero.y}`== `${arrow3.x},${arrow3.y}`)
     {
-
+      let health = document.querySelector("#hp");
+      let damage = 1;
       health.value-=damage;
       if(health.value <=0 ){
           window.location="http://127.0.0.1:5500/index.html";
@@ -1843,6 +1854,13 @@ Readynext:
         events:[
           {type:"textMessage",text:"Ủa hết lối đi rồi"},
           {type:"changeGame", url:"http://127.0.0.1:5500/Almost.html"},
+        ]
+      }],
+      [utils.asGridCoord(30,0)] :[ {
+        events:[
+          {type:"textMessage",text:"Chúc bạn may mắn lần sau =DD TUi ko biết vì sao đâu "},
+          {type:"changeGame", url:"http://127.0.0.1:5500/shooting.html"},
+          {who:"player",type:"walk",direction:"right"},
         ]
       }],
       [utils.asGridCoord(12,0)] :[ {
