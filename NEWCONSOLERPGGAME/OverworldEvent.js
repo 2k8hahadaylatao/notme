@@ -91,7 +91,7 @@ class OverworldEvent {
       {
         setTimeout(() => {
           localStorage.setItem("done","false")
-        }, 10000);
+        }, 10);
           const diachi = this.event.url;
           window.open(diachi,'_blank');
           resolve();
